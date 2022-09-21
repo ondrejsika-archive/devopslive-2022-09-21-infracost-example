@@ -9,6 +9,9 @@ infracost:
     - make breakdown-json
     - make breakdown-table
     - make breakdown-html
+    - make get-master
+    - make diff-json
+    - make diff-out
   artifacts:
     paths:
       - "infracost*.out.*"
