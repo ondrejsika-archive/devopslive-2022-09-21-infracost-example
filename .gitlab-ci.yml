@@ -12,6 +12,7 @@ infracost:
     - make get-master
     - make diff-json
     - make diff-table
+    - make gitlab-comment-commit
   artifacts:
     paths:
       - "infracost*.out.*"
