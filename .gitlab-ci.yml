@@ -1,0 +1,13 @@
+image: sikalabs/ci
+
+stages:
+  - infracost
+
+infracost:
+  stage: infracost
+  script:
+    - make breakdown-json
+    - make breakdown-table
+  artifacts:
+    paths:
+      - "infracost*.out.*"
