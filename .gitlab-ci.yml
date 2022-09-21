@@ -8,6 +8,7 @@ infracost:
   script:
     - make breakdown-json
     - make breakdown-table
+    - make breakdown-html
   artifacts:
     paths:
       - "infracost*.out.*"
