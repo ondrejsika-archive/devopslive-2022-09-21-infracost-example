@@ -6,6 +6,7 @@ resource "aws_db_instance" "example" {
   instance_class    = "db.t3.micro"
   db_name           = "example"
   username          = "admin"
+  iops              = 10000
   password          = random_password.rds-example.result
   depends_on = [
     aws_security_group.example-allow-all,
