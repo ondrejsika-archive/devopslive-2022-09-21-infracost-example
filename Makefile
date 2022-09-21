@@ -32,3 +32,11 @@ gitlab-comment-commit:
 		--path=infracost.diff.out.json \
 		--repo ondrejsika/example \
 		--commit ${CI_COMMIT_SHA}
+
+gitlab-comment-merge-request:
+	infracost comment gitlab \
+		--gitlab-server-url https://gitlab.sikademo.com \
+		--gitlab-token=7tMNgSABZLrgBLE8J7_2 \
+		--path=infracost.diff.out.json \
+		--repo ondrejsika/example \
+		--merge-request ${CI_MERGE_REQUEST_ID}
