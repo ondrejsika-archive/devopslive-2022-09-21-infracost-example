@@ -11,7 +11,7 @@ infracost:
     - make breakdown-html
     - make get-master
     - make diff-json
-    - make diff-out
+    - make diff-table
   artifacts:
     paths:
       - "infracost*.out.*"
