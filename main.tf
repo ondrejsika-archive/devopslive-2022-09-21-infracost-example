@@ -17,3 +17,12 @@ resource "aws_db_instance" "example" {
   publicly_accessible  = true
   skip_final_snapshot  = true
 }
+
+resource "aws_instance" "ec2" {
+  ami           = "ami-049ed5fa529109ac4"
+  instance_type = "t2.large"
+  key_name      = aws_key_pair.ondrejsika.key_name
+  security_groups = [
+    aws_security_group.allow_all.name,
+  ]
+}
