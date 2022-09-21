@@ -29,6 +29,12 @@ gitlab-comment-commit:
 	infracost comment gitlab \
 		--gitlab-server-url https://gitlab.sikademo.com \
 		--gitlab-token=7tMNgSABZLrgBLE8J7_2 \
+		--path=infracost.local.out.json \
+		--repo ondrejsika/example \
+		--commit ${CI_COMMIT_SHA}
+	infracost comment gitlab \
+		--gitlab-server-url https://gitlab.sikademo.com \
+		--gitlab-token=7tMNgSABZLrgBLE8J7_2 \
 		--path=infracost.diff.out.json \
 		--repo ondrejsika/example \
 		--commit ${CI_COMMIT_SHA}
